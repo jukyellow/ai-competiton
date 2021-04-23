@@ -1,0 +1,73 @@
+데이터에 대한 자세한 설명은 토론 탭
+
+데이터 및 대회 규칙 상세 설명 참조
+
+연간 데이콘 대회 및 데이터 상세설명 PPT
+
+
+
+
+
+인공지능 비트 트레이더 경진대회는 다음과 같이 4가지 데이터를 제공합니다.
+
+
+
+1. train_x_df.csv (10159560, 12)
+
+
+
+임의의 시점 부터 2021년 1월 31일까지 9가지 종류의 암호화폐의 분단위 가격정보를 가공한 데이터
+
+
+
+2. train_y_df.csv (883440, 12)
+
+임의의 시점 부터 2021년 1월 31일까지 9가지 종류의 암호화폐의 분단위 가격정보를 가공한 데이터
+
+
+
+3.test_x_df.csv (730020, 12)
+
+
+
+2021년 2월 1일 부터 임의의 시점까지 9가지 종류의 암호화폐의 분단위 가격정보를 가공한 데이터
+
+
+
+4.sample_submission.csv (529, 3)
+
+test_x_df에는 529가지 sample_id가 존재하고 각 sample_id는 1380분 동안의 가격 변동 정보를 포함합니다.
+
+
+
+
+
+
+
+[컬럼 설명]
+
+
+
+sample_id : 개별 샘플의 인덱스
+
+time : x_df는 0분 ~ 1379분, y_df는 0분 ~ 119분의 값을 갖습니다. 동일한 샘플 내 시간 정보
+
+coin_index : 10가지 종류의 코인에 대한 비식별화 인덱스 (0 ~9)
+
+open : open price
+
+high : high price
+
+low : low price
+
+close : close price
+
+volume : 거래량
+
+quote_av : quote asset volume
+
+trades : 거래 건 수
+
+tb_base_av : taker buy base asset volume
+
+tb_quote_av : taker buy quote asset volume
